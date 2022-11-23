@@ -1,0 +1,44 @@
+footer {
+    display: flex;
+    justify-content: center;
+    padding:90px 30px 0 30px;
+    background-color: rgb(70, 69, 69);
+    color: #fff;
+}
+
+.social-logo img{
+    margin: 30px;
+}
+
+footer p{
+    text-align: center;
+}
+
+.card-product {
+    display: flex;
+    flex-flow: column;
+    padding: 50px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.card-product button{
+    width: 30%;
+    background-color: black;
+    color: #fff;
+    border-color: black;
+}
+
+.card-product span{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+.card-product figcaption {
+    background-color: white;
+    color: black;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
