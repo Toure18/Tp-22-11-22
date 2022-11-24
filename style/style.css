@@ -1,3 +1,11 @@
+.list-nav{
+    display: flex;
+    list-style: none;
+}
+
+.list-nav li{
+    margin: auto 5px;
+}
 footer {
     display: flex;
     justify-content: center;
@@ -34,11 +42,51 @@ footer p{
     font-size: 25px;
 }
 
-
+.card-product::before{
+    content: "-45%";
+    padding: 10px;
+    background-color: rgba(var(--bs-dark-rgb));
+    position: absolute;
+    border-radius: 10px;
+    font-weight: bold;
+    color: rgba(var(--bs-warning-rgb));
+    margin-left: 350px;
+    margin-top: 10px;
+}
 .card-product figcaption {
     background-color: white;
     color: black;
-    font: italic smaller sans-serif;
     padding: 3px;
     text-align: center;
 }
+
+.footer-banner{
+    background-color: #fff;
+    padding: 5px;
+    padding-top: 15px;
+    width: fit-content;
+    border-radius: 15px;
+    margin: -30px 250px;
+    position: absolute;
+}
+
+.footer-banner li{
+    list-style: none;
+    margin: auto 15px;
+    color: gray;
+}
+
+.footer-banner li:nth-child(2n){
+    color: lightgray;
+}
+
+@media screen and (max-width: 640px) {
+    .footer-banner{
+        font-size: 5px;
+        margin: -20px 30px;
+    }
+
+    .card-product::before{
+        margin-left: 200px;
+    }
+  }
